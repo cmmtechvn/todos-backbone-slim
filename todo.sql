@@ -10,9 +10,10 @@ Target Server Type    : MYSQL
 Target Server Version : 50141
 File Encoding         : 65001
 
-Date: 2013-12-26 11:08:19
+Date: 2013-12-30 13:58:24
 */
-
+CREATE DATABASE `todo` CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `todo`;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -24,10 +25,5 @@ CREATE TABLE `todos` (
   `title` varchar(100) NOT NULL,
   `completed` tinyint(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
--- ----------------------------
--- Records of todos
--- ----------------------------
-INSERT INTO `todos` VALUES ('1', '1', '1');
-INSERT INTO `todos` VALUES ('2', '2', '1');
